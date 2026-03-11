@@ -1,0 +1,38 @@
+runtime: nodejs22
+instance_class: F2
+
+# Scaling configuration to address terminal warnings and manage costs
+automatic_scaling:
+  min_instances: 1
+  max_instances: 5
+  target_cpu_utilization: 0.65
+
+env_variables:
+  HOST: "0.0.0.0"
+  NODE_ENV: "production"
+
+  # Database Configuration (bgfp-gcp-cms specific)
+  # Updated to match your project's default App Engine hostname
+
+  DATABASE_CLIENT: "postgres"
+  DATABASE_NAME: "postgres"
+  DATABASE_USER: "postgres"
+  DATABASE_PASSWORD: "2ml5YMSli7C{@.nv"
+  INSTANCE_CONNECTION_NAME: "bgfp-489912:us-central1:strapi"
+
+  # Media Storage Configuration
+  GCS_BUCKET_NAME: "strapi-bgfp-gcp"
+  GCS_BASE_PATH: "cms"
+
+  # REQUIRED: Strapi Security Secrets
+  # Ensure you replace these placeholders with unique random strings before deploying
+  APP_KEYS: "generate_four_comma_separated_base64_strings"
+  API_TOKEN_SALT: "generate_random_salt_string"
+  ADMIN_JWT_SECRET: "generate_random_jwt_secret"
+  TRANSFER_TOKEN_SALT: "generate_random_transfer_salt"
+  ENCRYPTION_KEY: "generate_random_encryption_key"
+  JWT_SECRET: "generate_random_jwt_secret"
+
+beta_settings:
+  # Links the App Engine service to your Cloud SQL instance
+  cloud_sql_instances: "bgfp-489912:us-central1:strapi"
