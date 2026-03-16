@@ -6,5 +6,9 @@ steps:
       - "-c"
       - "gcloud app deploy app.yaml --project=bgfp-489912 --quiet"
 
+# Add this options block to fix the logging error
+options:
+  logging: CLOUD_LOGGING_ONLY
+
 # Increase timeout for Strapi build
 timeout: "3600s"
