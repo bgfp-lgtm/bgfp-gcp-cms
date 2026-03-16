@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_homepage_ready_to_get_started_s",
+  "info": {
+    "displayName": "Ready to Get Started?"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "quote": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "call": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "support": {
+      "type": "string"
+    },
+    "response": {
+      "type": "string"
+    },
+    "discrete": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

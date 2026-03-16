@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_homepage_other_services",
+  "info": {
+    "displayName": "Other Services"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "link": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "cards": {
+      "type": "component",
+      "component": "elements.card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

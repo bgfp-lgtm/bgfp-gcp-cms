@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_blocks",
+  "info": {
+    "displayName": "Block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

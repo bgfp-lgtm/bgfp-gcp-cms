@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_elements_numbers",
+  "info": {
+    "displayName": "Numbers"
+  },
+  "options": {},
+  "attributes": {
+    "subtitleOne": {
+      "type": "text"
+    },
+    "number": {
+      "type": "text"
+    },
+    "subtitleTwo": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_homepage_spectrums",
+  "info": {
+    "displayName": "Spectrum"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "text"
+    },
+    "title2": {
+      "type": "text"
+    },
+    "subtitle2": {
+      "type": "text"
+    },
+    "ques1": {
+      "type": "text"
+    },
+    "ans1": {
+      "type": "text"
+    },
+    "ques2": {
+      "type": "text"
+    },
+    "ans2": {
+      "type": "text"
+    },
+    "link": {
+      "type": "component",
+      "component": "elements.link",
+      "repeatable": false
+    },
+    "right_description": {
+      "type": "text"
+    },
+    "right_block": {
+      "type": "component",
+      "component": "elements.block",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
